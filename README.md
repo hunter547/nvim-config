@@ -10,19 +10,39 @@ For macOS users:
 brew install neovim
 ```
 
-### Create and cd into the neovim config directory
+### Create the neovim config directory
 ```bash
-mkdir ~/.config/neovim
-cd ~/.config/neovim
+mkdir -p ~/.config/neovim
 ```
 
 ### Clone this repository into the neovim config directory
 ```bash
-git clone https://github.com/hunter547/nvim-config.git
+git clone https://github.com/hunter547/nvim-config.git ~/.config/neovim/.
 
-# Move all the from the cloned repo into the neovim config directory
-mv nvim-config/* ~/.config/neovim
-rm -rf nvim-config
 ```
 
+## Usage
+
+### Install all packages
+Open up neovim to allow the lazy.nvim package manager install all plugins
+```bash
+nvim
+```
+
+Quit neovim after all packages have been installed
+```bash
+:q
+```
+
+Open up neovim and start coding now that everything has been configured!
+```bash
+neovim <path-to-project>
+
+# or. 
+
+# This method is better because telescope will search for files
+# grep matches reletive to the directory you are currently in
+cd <path-to-project>
+neovim 
+```
 
