@@ -21,6 +21,7 @@ return {
       vim.keymap.set("n", "<leader>ff", telescope_builtin.find_files, {})
       vim.keymap.set("n", "<leader>fg", telescope_builtin.live_grep, {})
       vim.keymap.set("n", "<leader>fb", telescope_builtin.buffers, {})
+      vim.keymap.set('n', "<C-t>", '<cmd>tabnew<CR><cmd>Telescope find_files<CR>')
     end,
   },
   {
