@@ -30,35 +30,35 @@ return {
 			local lspconfig = require("lspconfig")
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			lspconfig.bashls.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.cssls.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.dockerls.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.docker_compose_language_service.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.eslint.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.html.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.jsonls.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.lua_ls.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.tailwindcss.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.tsserver.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("UserLspConfig", {}),
