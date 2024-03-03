@@ -17,8 +17,7 @@ mkdir -p ~/.config/neovim
 
 ### Clone this repository into the neovim config directory
 ```bash
-git clone https://github.com/hunter547/nvim-config.git ~/.config/neovim/.
-
+git clone https://github.com/hunter547/nvim-config.git ~/.config/neovim
 ```
 
 ## Usage
